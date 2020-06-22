@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+{% if data %}
+<table>
+    <tr>
+        <th>S/N</th>
+        <th>User Name</th>
+        <th>Points</th>
+    </tr>
+    {% for k in data %}
+    {% for item_1 in k.items %}
+    <tr>
+        <td>{{ item_1 }}</td>
+    </tr>
+    {% endfor %}
+    {% endfor %}
+</table>
+{% endif %}
+{% endblock %}
+
+</body>
+</html>
