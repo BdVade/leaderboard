@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'HngLeaderBoard.apps.HngLeaderBoardConfig'
+    'hngleaderboard.apps.HngleaderboardConfig'
 ]
 
 MIDDLEWARE = [

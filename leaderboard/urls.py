@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from HngLeaderBoard.views import LeaderboardView
+from hngleaderboard.views import LeaderboardView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
