@@ -6,21 +6,29 @@
 </head>
 <body>
 {% block content %}
-{% if data %}
 <table>
-    <tr>
-        <th>S/N</th>
-        <th>UserName</th>
-        <th>Points</th>
-    </tr>
-    {% for k in data.values %}
+{% if data %}
 
-    <tr>
-        <td>{{ k }}</td>
-    </tr>
-    {% endfor %}
-</table>
+    <thead>
+        <tr>
+            <th>S/N</th>
+            <th>UserName</th>
+            <th>Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for v in data %}
+        <tr>
+            {% for k in v.values %}
+
+                <td>{{ k }}</td>
+
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
 {% endif %}
+</table>
 {% endblock %}
 
 </body>

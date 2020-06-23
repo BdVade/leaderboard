@@ -1,0 +1,20 @@
+.box {
+  height: 157px;
+  background: #000000;
+  left: 0px;
+  top: 0px;
+}
+
+.texting {
+  font-family: Montserrat;
+  font-style: normal;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.longbtn {
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-bottom: 5vh;
+}
