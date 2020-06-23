@@ -10,15 +10,14 @@
 <table>
     <tr>
         <th>S/N</th>
-        <th>User Name</th>
+        <th>UserName</th>
         <th>Points</th>
     </tr>
-    {% for k in data %}
-    {% for item_1 in k.items %}
+    {% for k in data.values %}
+
     <tr>
-        <td>{{ item_1 }}</td>
+        <td>{{ k }}</td>
     </tr>
-    {% endfor %}
     {% endfor %}
 </table>
 {% endif %}
