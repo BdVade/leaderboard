@@ -3,7 +3,7 @@ from django.views.generic import View
 import json
 import os
 
-with open('leaderboard/HngLeaderBoard/package.json') as f:
+with open('package.json') as f:
     data = json.load(f)
 
 
